@@ -7,7 +7,7 @@ _visual word count_
 using pip:
 
 ```
-pip3 install https://github.com/galencm/word-sea --user
+pip3 install git+https://github.com/galencm/word-sea --user
 ```
 
 Clone / download
