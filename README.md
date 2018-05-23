@@ -16,25 +16,26 @@ git clone https://github.com/galencm/word-sea
 ```
 
 ## Examples
-Examples using text from _The history of silk, cotton, linen, wool, and other fibrous substances_ from [https://archive.org/details/historyofsilkcot01gilr](https://archive.org/details/historyofsilkcot01gilr)
+Examples use text of _A chronology of paper and paper-making_ by Joel Munsell, published in 1857, available from [https://archive.org/details/chronologyofpape01muns](https://archive.org/details/chronologyofpape01muns)
 
+To get the text used:
 ```
-wget https://archive.org/stream/historyofsilkcot01gilr/historyofsilkcot01gilr_djvu.txt
+wget https://archive.org/stream/chronologyofpape01muns/chronologyofpape01muns_djvu.txt
 ```
 
-Run without any arguments:
+Run `ws` without any arguments:
 ```
-ws historyofsilkcot01gilr_djvu.txt  | less -R
+ws chronologyofpape01muns_djvu.txt  | less -R
 ```
 
 Show only the key for word counts >= 10 and word length >= 10
 ```
- ws historyofsilkcot01gilr_djvu.txt --count-threshold 10 --length-threshold 10 --key-only | less -R
+ ws chronologyofpape01muns_djvu.txt --count-threshold 10 --length-threshold 10 --key-only | less -R
 ```
 
 Page through the beiged-out text:
 ```
- ws historyofsilkcot01gilr_djvu.txt --count-threshold 10 --length-threshold 10 | less -R
+ ws chronologyofpape01muns_djvu.txt --count-threshold 10 --length-threshold 10 | less -R
 ```
 
 Run directly:
